@@ -1,7 +1,6 @@
 # Batch High Throughput Virtual Screening Script, by Rac Mukkamala
 
 ## Description
-A script that automatically runs batch ORCA and Autodock jobs, and organizes all files and results from the batch jobs.
 A Bash script to submit batch jobs to ORCA, OpenBabel, MGLTools, and Autodock Vina. Automatically checks for syntax errors in ORCA input files, and can also identify ORCA runtime crashes. Provides a list of failed ORCA jobs at the end for easy troubleshooting. Organizes log files into individual directories, and creates an easy to read results summary text file. Created by Rac Mukkamala
 
 ## Prerequisite Installations
@@ -10,8 +9,9 @@ In order for the script to work, the following softwares must be installed:
 - OpenBabel (`sudo apt-get install openbabel`)
 - MolKit Python Package (https://packages.ubuntu.com/source/xenial/mgltools-molkit)
 - Autodock Vina (http://vina.scripps.edu/)
+- Python 2.7 (https://www.python.org/download/releases/2.7/)
 
-*Note: Molkit is already installed in the ASDRP server*
+*Note: All five of these softwares are already installed in the ASDRP server*
 
 ## Params
 The `htvs_params.txt` file specifies the full path to ORCA, the preferred ORCA input header for input file syntax checking, the path to MGLTools' `prepare-ligand.py` script, the path to the Autodock Vina params script, and the path to the receptor protein. The params file can be renamed to whatever you prefer, however its contents must follow the format shown below:
