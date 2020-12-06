@@ -1,7 +1,8 @@
 #!/bin/bash
 echo 'Batch High Throughput Virtual Screening, Rac Mukkamala'
 echo 'A combination of ORCA, OpenBabel, MGLTools, and Autodock Vina'
-echo $'Please acknowledge use of this script!'
+echo $'Please acknowledge use of this script as follows!\n'
+echo 'Mukkamala, R (2020) Batch High Throughput Virtual Screening Script (Version 1.0) [Source code]. https://github.com/RackS103/Batch-HTVS'
 echo $'\nStarting batch job....\n'
 Errors=[]
 
