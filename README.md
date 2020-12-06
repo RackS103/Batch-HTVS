@@ -45,13 +45,20 @@ RECEPTOR: receptor_name.pdbqt
 
 ## Running the script
 1. Set up the file structure outlined above
-2. Provide execution privileges to the script by typing the command `chmod +x orcabatch.sh`
+2. Provide execution privileges to the script by typing the command `chmod +x htvs.sh`
 3. **Recommended: If running using nohup:** It is recommended that you run the script using nohup as follows:
   `nohup bash htvs.sh [directory with input files] htvs_params.txt > [log.out] &`
 4. **For conventional use**: The script can also be run without nohup as follows. The only caveat is that all the script's messages will be sent to stdout and may be lost:
-  `./orcabatch.sh [directory with input files] htvs_params.txt &`
+  `./htvs.sh [directory with input files] htvs_params.txt &`
 
 ## Citation
 **Please acknowledge use of this script in any paper/report as follows:**
 
-"Mukkamala, R (2020) Batch High Throughput Virtual Screening Script (Version 1.0) [Source code].https://github.com/RackS103/Batch-HTVS"
+Mukkamala, R (2020) Batch High Throughput Virtual Screening Script (Version 1.0) [Source code].https://github.com/RackS103/Batch-HTVS
+
+**Please also acknowledge these other programs which are used by this script:**
+- Morris, G. M., Huey, R., Lindstrom, W., Sanner, M. F., Belew, R. K., Goodsell, D. S. and Olson, A. J. (2009) Autodock4 and AutoDockTools4: automated docking with selective receptor flexiblity. J. Computational Chemistry 2009, 16: 2785-91
+- Neese, F. (2012) The ORCA program system, Wiley Interdiscip. Rev.: Comput. Mol. Sci., 2, 73-78.
+- N M O'Boyle, M Banck, C A James, C Morley, T Vandermeersch, and G R Hutchison. "Open Babel: An open chemical toolbox." J. Cheminf. (2011), 3, 33. DOI:10.1186/1758-2946-3-33
+- O. Trott, A. J. Olson, AutoDock Vina: improving the speed and accuracy of docking with a new scoring function, efficient optimization and multithreading, Journal of Computational Chemistry 31 (2010) 455-461
+
