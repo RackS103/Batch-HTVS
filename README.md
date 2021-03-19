@@ -1,6 +1,8 @@
 # Batch High Throughput Virtual Screening Script
-Rachit Mukkamala
-Version 2.0
+
+**Rachit Mukkamala**
+
+**Version 2.0**
 
 ## Description
 A Bash script to submit batch jobs to ORCA, OpenBabel, MGLTools, and Autodock Vina. Automatically checks for syntax errors in ORCA input files, and can also identify ORCA runtime crashes. Provides a list of failed ORCA jobs at the end for easy troubleshooting. Organizes log files into individual directories, and creates an easy to read results summary text file. Created by Rachit Mukkamala
@@ -53,9 +55,12 @@ RECEPTOR: receptor_name.pdbqt
 
 ## Citation
 **Please acknowledge use of this script in any paper/report as follows:**
+
 Mukkamala, R (2020) Batch High Throughput Virtual Screening Script (Version 1.0) [Source code].https://github.com/RackS103/Batch-HTVS
 
 **Attached below is the BibTex citation for this script for citation managers**
+
+```
 @misc{mukkamala_2021, 
       title={Batch High Throughput Virtual Screening Script}, 
       url={https://github.com/RackS103/Batch-HTVS}, 
@@ -64,6 +69,7 @@ Mukkamala, R (2020) Batch High Throughput Virtual Screening Script (Version 1.0)
       year={2021}, 
       month={Mar}
 }
+```
 
 **Please also acknowledge these other programs which are used by this script:**
 - Morris, G. M., Huey, R., Lindstrom, W., Sanner, M. F., Belew, R. K., Goodsell, D. S. and Olson, A. J. (2009) Autodock4 and AutoDockTools4: automated docking with selective receptor flexiblity. J. Computational Chemistry 2009, 16: 2785-91
