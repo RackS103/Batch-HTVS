@@ -42,7 +42,7 @@ do
       vina_process_id=$!
       wait $vina_process_id
       
-      result=$(grep "REMARK VINA RESULT:" "${fullpath}_out.pdbqt" | head -1 | sed 's/REMARK VINA RESULT: *//;s/ *.*//')
+      result=$(grep "REMARK VINA RESULT:" "${fullpath}_out.pdbqt" | head -1 | sed 's/REMARK VINA RESULT: *//;s/ *0\.000 *0\.000//')
       echo "$molecule: RESULT! Binding score of $result"
       echo "$molecule = $result" >> "$1/htvs_summary.txt"
 
