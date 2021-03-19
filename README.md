@@ -1,24 +1,24 @@
-# Batch High Throughput Virtual Screening Script, by Rac Mukkamala
+# Batch High Throughput Virtual Screening Script
+Rachit Mukkamala
+Version 2.0
 
 ## Description
-A Bash script to submit batch jobs to ORCA, OpenBabel, MGLTools, and Autodock Vina. Automatically checks for syntax errors in ORCA input files, and can also identify ORCA runtime crashes. Provides a list of failed ORCA jobs at the end for easy troubleshooting. Organizes log files into individual directories, and creates an easy to read results summary text file. Created by Rac Mukkamala
+A Bash script to submit batch jobs to ORCA, OpenBabel, MGLTools, and Autodock Vina. Automatically checks for syntax errors in ORCA input files, and can also identify ORCA runtime crashes. Provides a list of failed ORCA jobs at the end for easy troubleshooting. Organizes log files into individual directories, and creates an easy to read results summary text file. Created by Rachit Mukkamala
 
 ## Prerequisite Installations
 In order for the script to work, the following softwares must be installed:
 - ORCA (https://orcaforum.kofo.mpg.de/app.php/portal)
-- OpenBabel (`sudo apt-get install openbabel`)
+- OpenBabel (https://open-babel.readthedocs.io/en/latest/Installation/install.html)
 - MolKit Python Package (https://packages.ubuntu.com/source/xenial/mgltools-molkit)
 - Autodock Vina (http://vina.scripps.edu/)
 - Python 2.7 (https://www.python.org/download/releases/2.7/)
 
-*Note: All five of these softwares are already installed in the ASDRP server*
-
 ## Params
-The `htvs_params.txt` file specifies the full path to ORCA, the preferred ORCA input header for input file syntax checking, the path to MGLTools' `prepare-ligand.py` script, the path to the Autodock Vina params script, and the path to the receptor protein. The params file can be renamed to whatever you prefer, however its contents must follow the format shown below:
+The `htvs_params.txt` file specifies the full path to ORCA, the preferred ORCA input header for input file syntax checking, the path to MGLTools' `prepare_ligand4.py` script, the path to the Autodock Vina params script, and the path to the receptor protein. The params file can be renamed to whatever you prefer, however its contents must follow the format shown below:
 ```
 PATH: /bin/the/path/to/orca
-HEADER: ! B3LYP OPT def2-SVP NormalPrint Grid4 *NormalSCF PAL4
-MGL: prepare_ligand.py
+HEADER: ! B3LYP OPT def2-SVP NormalPrint Grid4 NormalSCF PAL2
+MGL: prepare_ligand4.py
 VINA: vina_params.txt
 RECEPTOR: receptor_name.pdbqt
 ```
@@ -33,7 +33,7 @@ RECEPTOR: receptor_name.pdbqt
 [root directory]
       htvs.sh
       htvs_params.txt
-      prepare_ligand.py
+      prepare_ligand4.py
       [receptor].pdbqt
       vina_params.txt
       [input file directory]
@@ -53,8 +53,17 @@ RECEPTOR: receptor_name.pdbqt
 
 ## Citation
 **Please acknowledge use of this script in any paper/report as follows:**
-
 Mukkamala, R (2020) Batch High Throughput Virtual Screening Script (Version 1.0) [Source code].https://github.com/RackS103/Batch-HTVS
+
+**Attached below is the BibTex citation for this script for citation managers**
+@misc{mukkamala_2021, 
+      title={Batch High Throughput Virtual Screening Script}, 
+      url={https://github.com/RackS103/Batch-HTVS}, 
+      publisher={GitHub}, 
+      author={Mukkamala, Rachit}, 
+      year={2021}, 
+      month={Mar}
+}
 
 **Please also acknowledge these other programs which are used by this script:**
 - Morris, G. M., Huey, R., Lindstrom, W., Sanner, M. F., Belew, R. K., Goodsell, D. S. and Olson, A. J. (2009) Autodock4 and AutoDockTools4: automated docking with selective receptor flexiblity. J. Computational Chemistry 2009, 16: 2785-91
