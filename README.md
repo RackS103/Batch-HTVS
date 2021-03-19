@@ -56,7 +56,7 @@ RECEPTOR: receptor_name.pdbqt
 ## Citation
 **Please acknowledge use of this script in any paper/report as follows:**
 
-Mukkamala, R (2020) Batch High Throughput Virtual Screening Script (Version 1.0) [Source code].https://github.com/RackS103/Batch-HTVS
+Mukkamala, R (2021) Batch High Throughput Virtual Screening Script (Version 1.0) [Source code].https://github.com/RackS103/Batch-HTVS
 
 **Attached below is the BibTex citation for this script for citation managers**
 
